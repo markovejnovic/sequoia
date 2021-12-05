@@ -1,0 +1,15 @@
+#!/bin/bash
+
+function endhandler {
+    pkill gst-launch-1.0
+    rm /tmp/sequoia-video.ogg
+    exit 0
+}
+
+trap endhandler INT
+gst-launch-1.0 multifilesrc location="$SEQUOIA_TEST_PATH/data/5.jpg" \
+    index=0 caps="image/jpeg,framerate=\(fraction\)1/1" \
+    ! jpegdec ! videoconvert ! videorate ! theoraenc ! oggmux \
+    ! filesink location="/tmp/sequoia-video.ogg"
+
+
