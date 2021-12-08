@@ -1,133 +1,139 @@
 [
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_sequoia.cpp.o -MF sequoia.p/src_sequoia.cpp.o.d -o sequoia.p/src_sequoia.cpp.o -c ../src/sequoia.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_sequoia.cpp.o -MF sequoia.p/src_sequoia.cpp.o.d -o sequoia.p/src_sequoia.cpp.o -c ../src/sequoia.cpp",
     "file": "../src/sequoia.cpp",
     "output": "sequoia.p/src_sequoia.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_config.cpp.o -MF sequoia.p/src_config.cpp.o.d -o sequoia.p/src_config.cpp.o -c ../src/config.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_config.cpp.o -MF sequoia.p/src_config.cpp.o.d -o sequoia.p/src_config.cpp.o -c ../src/config.cpp",
     "file": "../src/config.cpp",
     "output": "sequoia.p/src_config.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_logging.cpp.o -MF sequoia.p/src_logging.cpp.o.d -o sequoia.p/src_logging.cpp.o -c ../src/logging.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_logging.cpp.o -MF sequoia.p/src_logging.cpp.o.d -o sequoia.p/src_logging.cpp.o -c ../src/logging.cpp",
     "file": "../src/logging.cpp",
     "output": "sequoia.p/src_logging.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_mainui.cpp.o -MF sequoia.p/src_mainui.cpp.o.d -o sequoia.p/src_mainui.cpp.o -c ../src/mainui.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_mainui.cpp.o -MF sequoia.p/src_mainui.cpp.o.d -o sequoia.p/src_mainui.cpp.o -c ../src/mainui.cpp",
     "file": "../src/mainui.cpp",
     "output": "sequoia.p/src_mainui.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_event.cpp.o -MF sequoia.p/src_event.cpp.o.d -o sequoia.p/src_event.cpp.o -c ../src/event.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_event.cpp.o -MF sequoia.p/src_event.cpp.o.d -o sequoia.p/src_event.cpp.o -c ../src/event.cpp",
     "file": "../src/event.cpp",
     "output": "sequoia.p/src_event.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_AppThreadManager.cpp.o -MF sequoia.p/src_AppThreadManager.cpp.o.d -o sequoia.p/src_AppThreadManager.cpp.o -c ../src/AppThreadManager.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_AppThreadManager.cpp.o -MF sequoia.p/src_AppThreadManager.cpp.o.d -o sequoia.p/src_AppThreadManager.cpp.o -c ../src/AppThreadManager.cpp",
     "file": "../src/AppThreadManager.cpp",
     "output": "sequoia.p/src_AppThreadManager.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_context.cpp.o -MF sequoia.p/src_context.cpp.o.d -o sequoia.p/src_context.cpp.o -c ../src/context.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_context.cpp.o -MF sequoia.p/src_context.cpp.o.d -o sequoia.p/src_context.cpp.o -c ../src/context.cpp",
     "file": "../src/context.cpp",
     "output": "sequoia.p/src_context.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_ImageReader.cpp.o -MF sequoia.p/src_ImageReader.cpp.o.d -o sequoia.p/src_ImageReader.cpp.o -c ../src/ImageReader.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_ImageReader.cpp.o -MF sequoia.p/src_ImageReader.cpp.o.d -o sequoia.p/src_ImageReader.cpp.o -c ../src/ImageReader.cpp",
     "file": "../src/ImageReader.cpp",
     "output": "sequoia.p/src_ImageReader.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_ImageProcessor.cpp.o -MF sequoia.p/src_ImageProcessor.cpp.o.d -o sequoia.p/src_ImageProcessor.cpp.o -c ../src/ImageProcessor.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_ImageProcessor.cpp.o -MF sequoia.p/src_ImageProcessor.cpp.o.d -o sequoia.p/src_ImageProcessor.cpp.o -c ../src/ImageProcessor.cpp",
     "file": "../src/ImageProcessor.cpp",
     "output": "sequoia.p/src_ImageProcessor.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_color.cpp.o -MF sequoia.p/src_color.cpp.o.d -o sequoia.p/src_color.cpp.o -c ../src/color.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_color.cpp.o -MF sequoia.p/src_color.cpp.o.d -o sequoia.p/src_color.cpp.o -c ../src/color.cpp",
     "file": "../src/color.cpp",
     "output": "sequoia.p/src_color.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_drawing.cpp.o -MF sequoia.p/src_drawing.cpp.o.d -o sequoia.p/src_drawing.cpp.o -c ../src/drawing.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_drawing.cpp.o -MF sequoia.p/src_drawing.cpp.o.d -o sequoia.p/src_drawing.cpp.o -c ../src/drawing.cpp",
     "file": "../src/drawing.cpp",
     "output": "sequoia.p/src_drawing.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_uicontext.cpp.o -MF sequoia.p/src_uicontext.cpp.o.d -o sequoia.p/src_uicontext.cpp.o -c ../src/uicontext.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_uicontext.cpp.o -MF sequoia.p/src_uicontext.cpp.o.d -o sequoia.p/src_uicontext.cpp.o -c ../src/uicontext.cpp",
     "file": "../src/uicontext.cpp",
     "output": "sequoia.p/src_uicontext.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_raygui.cpp.o -MF sequoia.p/src_raygui.cpp.o.d -o sequoia.p/src_raygui.cpp.o -c ../src/raygui.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_raygui.cpp.o -MF sequoia.p/src_raygui.cpp.o.d -o sequoia.p/src_raygui.cpp.o -c ../src/raygui.cpp",
     "file": "../src/raygui.cpp",
     "output": "sequoia.p/src_raygui.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_ocv2ray.cpp.o -MF sequoia.p/src_ocv2ray.cpp.o.d -o sequoia.p/src_ocv2ray.cpp.o -c ../src/ocv2ray.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_ocv2ray.cpp.o -MF sequoia.p/src_ocv2ray.cpp.o.d -o sequoia.p/src_ocv2ray.cpp.o -c ../src/ocv2ray.cpp",
     "file": "../src/ocv2ray.cpp",
     "output": "sequoia.p/src_ocv2ray.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_filters.cpp.o -MF sequoia.p/src_filters.cpp.o.d -o sequoia.p/src_filters.cpp.o -c ../src/filters.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_filters.cpp.o -MF sequoia.p/src_filters.cpp.o.d -o sequoia.p/src_filters.cpp.o -c ../src/filters.cpp",
     "file": "../src/filters.cpp",
     "output": "sequoia.p/src_filters.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_Dimensioner.cpp.o -MF sequoia.p/src_Dimensioner.cpp.o.d -o sequoia.p/src_Dimensioner.cpp.o -c ../src/Dimensioner.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_Dimensioner.cpp.o -MF sequoia.p/src_Dimensioner.cpp.o.d -o sequoia.p/src_Dimensioner.cpp.o -c ../src/Dimensioner.cpp",
     "file": "../src/Dimensioner.cpp",
     "output": "sequoia.p/src_Dimensioner.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_image.cpp.o -MF sequoia.p/src_image.cpp.o.d -o sequoia.p/src_image.cpp.o -c ../src/image.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_image.cpp.o -MF sequoia.p/src_image.cpp.o.d -o sequoia.p/src_image.cpp.o -c ../src/image.cpp",
     "file": "../src/image.cpp",
     "output": "sequoia.p/src_image.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -MD -MQ sequoia_trainer.p/src_sequoia_trainer.cpp.o -MF sequoia_trainer.p/src_sequoia_trainer.cpp.o.d -o sequoia_trainer.p/src_sequoia_trainer.cpp.o -c ../src/sequoia_trainer.cpp",
+    "command": "c++ -Isequoia.p -I. -I.. -I../include -I../lib/include -I/usr/include/opencv4 -I/usr/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -pthread -DBOOST_THREAD_BUILD_DLL=1 -DBOOST_THREAD_USE_DLL=1 -DBOOST_ALL_NO_LIB -MD -MQ sequoia.p/src_cv2debugging.cpp.o -MF sequoia.p/src_cv2debugging.cpp.o.d -o sequoia.p/src_cv2debugging.cpp.o -c ../src/cv2debugging.cpp",
+    "file": "../src/cv2debugging.cpp",
+    "output": "sequoia.p/src_cv2debugging.cpp.o"
+  },
+  {
+    "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
+    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -MD -MQ sequoia_trainer.p/src_sequoia_trainer.cpp.o -MF sequoia_trainer.p/src_sequoia_trainer.cpp.o.d -o sequoia_trainer.p/src_sequoia_trainer.cpp.o -c ../src/sequoia_trainer.cpp",
     "file": "../src/sequoia_trainer.cpp",
     "output": "sequoia_trainer.p/src_sequoia_trainer.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -MD -MQ sequoia_trainer.p/src_context.cpp.o -MF sequoia_trainer.p/src_context.cpp.o.d -o sequoia_trainer.p/src_context.cpp.o -c ../src/context.cpp",
+    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -MD -MQ sequoia_trainer.p/src_context.cpp.o -MF sequoia_trainer.p/src_context.cpp.o.d -o sequoia_trainer.p/src_context.cpp.o -c ../src/context.cpp",
     "file": "../src/context.cpp",
     "output": "sequoia_trainer.p/src_context.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -MD -MQ sequoia_trainer.p/src_logging.cpp.o -MF sequoia_trainer.p/src_logging.cpp.o.d -o sequoia_trainer.p/src_logging.cpp.o -c ../src/logging.cpp",
+    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -MD -MQ sequoia_trainer.p/src_logging.cpp.o -MF sequoia_trainer.p/src_logging.cpp.o.d -o sequoia_trainer.p/src_logging.cpp.o -c ../src/logging.cpp",
     "file": "../src/logging.cpp",
     "output": "sequoia_trainer.p/src_logging.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -MD -MQ sequoia_trainer.p/src_filters.cpp.o -MF sequoia_trainer.p/src_filters.cpp.o.d -o sequoia_trainer.p/src_filters.cpp.o -c ../src/filters.cpp",
+    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -MD -MQ sequoia_trainer.p/src_filters.cpp.o -MF sequoia_trainer.p/src_filters.cpp.o.d -o sequoia_trainer.p/src_filters.cpp.o -c ../src/filters.cpp",
     "file": "../src/filters.cpp",
     "output": "sequoia_trainer.p/src_filters.cpp.o"
   },
   {
     "directory": "/home/marko/Desktop/College/EE332/FinalProject/sequoia/build",
-    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -MD -MQ sequoia_trainer.p/src_config.cpp.o -MF sequoia_trainer.p/src_config.cpp.o.d -o sequoia_trainer.p/src_config.cpp.o -c ../src/config.cpp",
+    "command": "c++ -Isequoia_trainer.p -I. -I.. -I../include -I/usr/include/opencv4 -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++17 -g -DSEQUOIA_STATIC_DEBUG -DSAVE_IMAGES -MD -MQ sequoia_trainer.p/src_config.cpp.o -MF sequoia_trainer.p/src_config.cpp.o.d -o sequoia_trainer.p/src_config.cpp.o -c ../src/config.cpp",
     "file": "../src/config.cpp",
     "output": "sequoia_trainer.p/src_config.cpp.o"
   }

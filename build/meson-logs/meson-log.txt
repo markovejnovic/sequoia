@@ -1,4 +1,4 @@
-Build started at 2021-12-07T21:54:16.983160
+Build started at 2021-12-07T23:56:22.367245
 Main binary: /usr/bin/python3
 Build Options: -Dbackend=ninja
 Python system: Linux
@@ -28,8 +28,8 @@ Build targets in project: 2
 
 Found ninja-1.10.1 at /usr/bin/ninja
 Running compile:
-Working directory:  /tmp/tmpzwgee93g
-Command line:  c++ /tmp/tmpzwgee93g/testfile.cpp -o /tmp/tmpzwgee93g/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++17 
+Working directory:  /tmp/tmp43l43k2j
+Command line:  c++ /tmp/tmp43l43k2j/testfile.cpp -o /tmp/tmp43l43k2j/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++17 
 
 Code:
  int i = static_cast<int>(0);
@@ -39,8 +39,8 @@ Compiler stderr:
  
 Compiler accepts -std=c++17: YES
 Running compile:
-Working directory:  /home/marko/Desktop/College/EE332/FinalProject/sequoia/build/meson-private/tmp6_svnpdj
-Command line:  c++ /home/marko/Desktop/College/EE332/FinalProject/sequoia/build/meson-private/tmp6_svnpdj/testfile.cpp -o /home/marko/Desktop/College/EE332/FinalProject/sequoia/build/meson-private/tmp6_svnpdj/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/marko/Desktop/College/EE332/FinalProject/sequoia/build/meson-private/tmp9ehtksqf
+Command line:  c++ /home/marko/Desktop/College/EE332/FinalProject/sequoia/build/meson-private/tmp9ehtksqf/testfile.cpp -o /home/marko/Desktop/College/EE332/FinalProject/sequoia/build/meson-private/tmp9ehtksqf/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
