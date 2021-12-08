@@ -49,6 +49,30 @@ void MainUI::drawImage(UIContext* context) {
     DrawTexture(this->image, DEF_MARGIN, DEF_MARGIN, WHITE);
 }
 
+void MainUI::drawMetrics(UIContext* context) {
+    int sm = context->manager->getSm();
+    std::string outst = "SM" + boost::lexical_cast<std::string>(sm);
+
+    int w = std::round(context->manager->getWidth());
+    std::string outw = "W" + boost::lexical_cast<std::string>(w);
+
+    int h = std::round(context->manager->getHeight());
+    std::string outh = "H" + boost::lexical_cast<std::string>(h);
+
+    DrawText(outst.c_str(),
+            this->screenWidth / 2 + DEF_MARGIN,
+            this->screenHeight / 2 + DEF_MARGIN,
+            52, BLACK);
+    DrawText(outw.c_str(),
+            this->screenWidth / 2 + DEF_MARGIN + 150,
+            this->screenHeight / 2 + DEF_MARGIN,
+            52, BLACK);
+    DrawText(outh.c_str(),
+            this->screenWidth / 2 + DEF_MARGIN + 250,
+            this->screenHeight / 2 + DEF_MARGIN,
+            52, BLACK);
+}
+
 MainUI::MainUI(std::string windowTitle) {
     this->windowTitle = windowTitle;
 }
@@ -105,4 +129,5 @@ void MainUI::main(UIContext *context) {
 void MainUI::loop(UIContext *context) {
     this->drawDecisionButtons(context);
     this->drawImage(context);
+    this->drawMetrics(context);
 }

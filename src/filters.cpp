@@ -9,14 +9,31 @@
 #include "logging.hpp"
 #include "context.hpp"
 
+cv::Mat Sequoia::Image::trainModelSV(cv::Mat* input, size_t inpCount) {
+    cv::Mat output = cv::Mat(input[0].size(), input[0].depth());
+    cv::calcHist(input, inpCount, Sequoia::Image::HIST_SV_CHANNELS,
+        cv::Mat(), output, 2, Sequoia::Image::HIST_SV_SIZE,
+        Sequoia::Image::HIST_SV_RANGE);
+    cv::normalize(output, output, 0,
+        Sequoia::Image::HIST_MAX_VAL, cv::NORM_MINMAX);
+
+    return output;
+}
+
+cv::Mat Sequoia::Image::backProjectSV(cv::Mat input, cv::Mat model) {
+    cv::Mat output;
+    cv::calcBackProject(&input, 1, Sequoia::Image::HIST_SV_CHANNELS,
+        model, output, Sequoia::Image::HIST_SV_RANGE, 1);
+
+    return output;
+}
+
 void cclSmallFilter(cv::Mat& input, const std::uint32_t areaThreshold) {
     cv::Mat labels;
     cv::Mat stats;
     cv::Mat centroids;
     int count = cv::connectedComponentsWithStats(
         input, labels, stats, centroids);
-
-    imshowLabels(input, labels, count);
 
     cv::Mat noiseRemoved = cv::Mat::zeros(input.size(), input.depth());
 

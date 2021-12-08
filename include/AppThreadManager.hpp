@@ -12,6 +12,9 @@
 struct SharedState {
     cv::Mat* outImage = nullptr;
     float fps;
+    float width;
+    float height;
+    int sm;
 };
 
 class AppThreadManager {
@@ -44,6 +47,33 @@ class AppThreadManager {
         return fps;
     }
 
+    void updateMetrics(float width, float height, int sm) {
+        std::function<void(SharedState* s)> updater =
+            MetricUpdater(width, height, sm);
+        this->stateBuffer->apply(updater);
+    }
+
+    float getWidth() {
+        SharedState* state = this->stateBuffer->readData();
+        float width = state->width;
+        delete state;
+        return width;
+    }
+
+    float getHeight() {
+        SharedState* state = this->stateBuffer->readData();
+        float height = state->height;
+        delete state;
+        return height;
+    }
+
+    float getSm() {
+        SharedState* state = this->stateBuffer->readData();
+        float sm = state->sm;
+        delete state;
+        return sm;
+    }
+
     void setOutputData(cv::Mat* data) {
         std::function<void(SharedState* s)> updater = ImageBufferUpdater(data);
         this->stateBuffer->apply(updater);
@@ -64,6 +94,21 @@ class AppThreadManager {
      public:
         explicit FpsUpdater(float fps) { this->fps = fps; }
         void operator()(SharedState *s) const { s->fps = this->fps; }
+    };
+
+    class MetricUpdater {
+     private:
+        int sm;
+        float width;
+        float height;
+     public:
+        explicit MetricUpdater(float w, float h, int sm) :
+            width(w), height(h), sm(sm) {}
+        void operator()(SharedState *s) const {
+            s->width = this->width;
+            s->height = this->height;
+            s->sm = this->sm;
+        }
     };
 
     class ImageBufferUpdater {

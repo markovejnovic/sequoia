@@ -47,6 +47,11 @@ void parse_config_kv(Configuration& config,
         config.dataStore = value;
         return;
     }
+
+    if (key == "camera_ppi") {
+        config.camPpi = std::stoi(value);
+        return;
+    }
 }
 
 const std::string getConfigPath(Context* ctx) {

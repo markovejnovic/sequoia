@@ -1,7 +1,6 @@
 // > inb4 c++ developers start talking about inheritance and how this is
 // > actually ugly
 // > C's macros are the most beautiful creation man has invented.
-// > im ready to die on that hill
 
 #include <opencv4/opencv2/opencv.hpp>
 

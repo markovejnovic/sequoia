@@ -26,9 +26,10 @@ sources = [
   'src/uicontext.cpp',
   'src/raygui.cpp',
   'src/ocv2ray.cpp',
-  'src/filters.cpp'
+  'src/filters.cpp',
+  'src/Dimensioner.cpp',
+  'src/image.cpp'
 ]
-
 
 add_global_arguments([
   '-DSEQUOIA_STATIC_DEBUG'
@@ -44,6 +45,7 @@ trainer = executable('sequoia_trainer', [
     'src/sequoia_trainer.cpp',
     'src/context.cpp',
     'src/logging.cpp',
+    'src/filters.cpp',
     'src/config.cpp'],
   install: true,
   dependencies: [opencvdep],

@@ -55,6 +55,7 @@ class MainUI {
     void handleInternalEvents(UIContext*);
     void drawDecisionButtons(UIContext*);
     void drawImage(UIContext*);
+    void drawMetrics(UIContext*);
 
     // Model data.
     float fps = 0;

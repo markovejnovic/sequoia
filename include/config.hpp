@@ -21,6 +21,7 @@ class Configuration {
     std::string dataStore;
     std::string logSink = "stdout";
     std::string errSink = "stderr";
+    int camPpi = 1;
 
     Configuration(Configuration const&) = delete;
     void operator=(Configuration const&) = delete;

@@ -1,15 +1,70 @@
 #include "ImageProcessor.hpp"
+
+#include <unistd.h>
+#include <boost/lexical_cast.hpp>
+
 #include "config.hpp"
 #include "trackhistogram.hpp"
 #include "logging.hpp"
 #include "filters.hpp"
 
-#include <unistd.h>
-#include <boost/lexical_cast.hpp>
 
 ImageProcessor::ImageProcessor(Context* ctx, cv::Mat image) {
     this->context = ctx;
     this->image = image;
+}
+
+cv::Mat ImageProcessor::findDiscolorations() {
+    CTX_BLAME_ME(this->context);
+
+    // Clean up noise with very small gaussian to not ruin the edge.
+    cv::Mat blurred(this->image.size(), this->image.depth());
+    cv::GaussianBlur(this->image, blurred, DEF_DISCOLOR_BLUR_SIZE, 3);
+
+    // Crop
+    cv::Rect cropRect = cv::Rect(
+        this->boardBox.x + DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.y + DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.width - 2 * DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.height - 2 * DEF_DISCOLOR_CROP_PADDING
+    );
+    cv::Mat cropped = blurred(cropRect);
+
+    // Convert to HSV
+    cv::Mat hsvTarget;
+    cv::cvtColor(cropped, hsvTarget, cv::COLOR_BGR2HSV);
+
+    // Known-Good Histogram
+    cv::Mat refHistogram(hsvTarget.size(), hsvTarget.depth());
+    cv::FileStorage histogramF(Configuration::getInstance().dataStore +
+            "/boardHist.sequoia", cv::FileStorage::READ);
+    histogramF["boardHist"] >> refHistogram;
+    histogramF.release();
+
+    cv::Mat backProj = Sequoia::Image::backProjectSV(hsvTarget, refHistogram);
+
+    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, { 5, 5 });
+
+    cv::Mat output;
+    cv::filter2D(backProj, output, -1, kernel);
+
+    cv::Mat thresheld;
+    double maxVal, minVal;
+    cv::minMaxLoc(output, &minVal, &maxVal);
+    float relativeThreshold = 0.99 * static_cast<float>(maxVal);
+    cv::threshold(output, thresheld, relativeThreshold, maxVal, 0);
+
+    // Do an operation of closing
+    cv::Mat closed = thresheld;
+    cv::Mat closingKernel = cv::Mat::ones(DEF_BB_CLOSING_SIZE,
+            DEF_BB_CLOSING_SIZE, 1);
+    cv::erode(closed, closed, closingKernel);
+    cv::dilate(closed, closed, closingKernel);
+
+    cv::Mat result;
+    cv::bitwise_not(closed, result);
+
+    return result;
 }
 
 cv::Rect ImageProcessor::getBoundingBox(float threshold) {
@@ -34,6 +89,8 @@ cv::Rect ImageProcessor::getBoundingBox(float threshold) {
 
     cv::Mat backProj(hsvTarget.size(), hsvTarget.depth());
 
+    // TODO: Implement this macro in ImageProcessor.hpp
+    // @see ImageProcessor::backProjectSV
     TRACK_BACK_PROJECT(hsvTarget, refHistogram, backProj);
 
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_ELLIPSE, { 5, 5 });
@@ -80,5 +137,6 @@ cv::Rect ImageProcessor::getBoundingBox(float threshold) {
     cv::findNonZero(result, coords);
 
     cv::Rect boundingRect = cv::minAreaRect(coords).boundingRect();
+    this->boardBox = boundingRect;
     return boundingRect;
 }
