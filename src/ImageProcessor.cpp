@@ -7,6 +7,7 @@
 #include "trackhistogram.hpp"
 #include "logging.hpp"
 #include "filters.hpp"
+#include "cv2debugging.hpp"
 
 
 ImageProcessor::ImageProcessor(Context* ctx, cv::Mat image) {
@@ -139,4 +140,59 @@ cv::Rect ImageProcessor::getBoundingBox(float threshold) {
     cv::Rect boundingRect = cv::minAreaRect(coords).boundingRect();
     this->boardBox = boundingRect;
     return boundingRect;
+}
+
+std::vector<cv::Vec3f> ImageProcessor::findKnots() {
+    CTX_BLAME_ME(this->context);
+
+    // Convert to Greyscale
+    cv::Mat workFrame;
+    cv::cvtColor(this->image, workFrame, cv::COLOR_BGR2GRAY);
+
+    // TODO: Remove these magics
+    cv::GaussianBlur(workFrame, workFrame, { 9, 9 }, 4);
+
+    // Crop
+    cv::Rect cropRect = cv::Rect(
+        this->boardBox.x + DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.y + DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.width - 2 * DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.height - 2 * DEF_DISCOLOR_CROP_PADDING
+    );
+    workFrame = workFrame(cropRect);
+
+    Sequoia::Dbg::saveImage(this->context, workFrame, "Preprocessed");
+
+    std::vector<cv::Vec3f> circles;
+    // TODO: Remove these magic numbers
+    cv::HoughCircles(workFrame, circles, cv::HOUGH_GRADIENT_ALT, 1.5, 50, 300, 0.5, 2, 200);
+
+    if (circles.size() == 0) {
+        log_dbg(this->context, "Found no circles.");
+    }
+
+    return circles;
+}
+
+cv::Mat ImageProcessor::findEdges() {
+    CTX_BLAME_ME(this->context);
+
+    cv::Mat workFrame = cv::Mat(this->image);
+    cv::GaussianBlur(workFrame, workFrame, { 9, 9 }, 4);
+
+    // Crop
+    cv::Rect cropRect = cv::Rect(
+        this->boardBox.x + DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.y + DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.width - 2 * DEF_DISCOLOR_CROP_PADDING,
+        this->boardBox.height - 2 * DEF_DISCOLOR_CROP_PADDING
+    );
+    workFrame = workFrame(cropRect);
+
+    Sequoia::Dbg::saveImage(this->context, workFrame, "Preprocessed");
+
+    cv::Mat out;
+    cv::Canny(workFrame, out, 40, 50);
+
+    return out;
 }

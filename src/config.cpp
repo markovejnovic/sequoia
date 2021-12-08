@@ -52,6 +52,13 @@ void parse_config_kv(Configuration& config,
         config.camPpi = std::stoi(value);
         return;
     }
+
+#if defined(SEQUOIA_STATIC_DEBUG) && defined(SAVE_IMAGES)
+    if (key == "debug_path") {
+        config.dbgDir = value;
+        return;
+    }
+#endif
 }
 
 const std::string getConfigPath(Context* ctx) {

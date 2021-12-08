@@ -1,6 +1,8 @@
 #ifndef _IMAGE_PROCESSOR_HPP_
 #define _IMAGE_PROCESSOR_HPP_
 
+#include <vector>
+#include <utility>
 #include <opencv4/opencv2/opencv.hpp>
 #include "sequoiagfx/rectangle.hpp"
 #include "context.hpp"
@@ -30,6 +32,17 @@ class ImageProcessor {
      * Returns a mask of all the detected discolorations in an image.
      */
     cv::Mat findDiscolorations();
+
+
+    /**
+     * Returns a vector of knots.
+     */
+    std::vector<cv::Vec3f> findKnots();
+
+    /**
+     * Returns edges.
+     */
+    cv::Mat findEdges();
 
  private:
     cv::Mat image;

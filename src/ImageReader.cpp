@@ -56,6 +56,27 @@ void ImageReader::readProcessLoop(cv::Mat frame) {
         cv::BORDER_CONSTANT);
     Sequoia::Image::overlay({ outBuf, cDisc }, outBuf, 0.4);
 
+    // Find knots
+    std::vector<cv::Vec3f> knots = imageProcessor.findKnots();
+    for (auto knot : knots) {
+        cv::circle(outBuf, cv::Point {
+                static_cast<int>(knot[0]),
+                static_cast<int>(knot[1])
+            }, knot[2], cv::Scalar(0, 255, 0));
+    }
+
+    // Find edges
+    cv::Mat edges = imageProcessor.findEdges();
+    cv::Mat cEdges = Sequoia::Image::greyToChannel(edges, 1);
+    cv::copyMakeBorder(cEdges, cEdges,
+        lumberBox.y + DEF_DISCOLOR_CROP_PADDING,
+        frame.rows - (lumberBox.y + lumberBox.height) + DEF_DISCOLOR_CROP_PADDING,
+        lumberBox.x + DEF_DISCOLOR_CROP_PADDING,
+        frame.cols - (lumberBox.x + lumberBox.width) + DEF_DISCOLOR_CROP_PADDING,
+        cv::BORDER_CONSTANT);
+    Sequoia::Image::overlay({ outBuf, cEdges }, outBuf, 0.4);
+
+
     this->outputBuffer = new cv::Mat(outBuf);
     cv::waitKey();
 }

@@ -19,6 +19,9 @@ class Configuration {
     std::string videoSource;
     bool isDebug = false;
     std::string dataStore;
+#if defined(SEQUOIA_STATIC_DEBUG) && defined(SAVE_IMAGES)
+    std::string dbgDir;
+#endif
     std::string logSink = "stdout";
     std::string errSink = "stderr";
     int camPpi = 1;

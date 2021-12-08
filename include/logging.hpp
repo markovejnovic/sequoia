@@ -9,6 +9,8 @@ void log_dbg(Context *context, std::string message);
 
 void log_info(Context *context, std::string message);
 
+void log_warn(Context *context, std::string message);
+
 void log_err(Context *context, std::string message);
 
 std::string mat2ShapeS(cv::Mat&);

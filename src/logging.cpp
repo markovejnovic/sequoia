@@ -6,8 +6,9 @@
 #include <boost/lexical_cast.hpp>
 
 #define LOG_TAG_ERR "[\033[31m"
-#define LOG_TAG_DBG "["
-#define LOG_TAG_INFO "["
+#define LOG_TAG_DBG "[\033[92m"
+#define LOG_TAG_INFO "[\033[96m"
+#define LOG_TAG_WARN "[\033[93m"
 #define LOG_TAG_END "\033[0m]: "
 
 void _log_info(Context *ctx, std::string message) {
@@ -58,6 +59,10 @@ void log_dbg(Context *context, std::string message) {
 
 void log_info(Context *context, std::string message) {
     _log_info(context, LOG_TAG_INFO + context->blame + LOG_TAG_END + message);
+}
+
+void log_warn(Context *context, std::string message) {
+    _log_info(context, LOG_TAG_WARN + context->blame + LOG_TAG_END + message);
 }
 
 void log_err(Context *context, std::string message) {

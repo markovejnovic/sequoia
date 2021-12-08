@@ -28,11 +28,13 @@ sources = [
   'src/ocv2ray.cpp',
   'src/filters.cpp',
   'src/Dimensioner.cpp',
-  'src/image.cpp'
+  'src/image.cpp',
+  'src/cv2debugging.cpp'
 ]
 
 add_global_arguments([
-  '-DSEQUOIA_STATIC_DEBUG'
+  '-DSEQUOIA_STATIC_DEBUG',
+  '-DSAVE_IMAGES'
 ], language: 'cpp')
 
 exe = executable('sequoia', sources,
