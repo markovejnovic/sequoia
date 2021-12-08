@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module anonymous-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="288" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="57" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="29" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="9.931" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.966" level="0" />
+<weighted_methods_per_class_unity value="20" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="0" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>_log_err(Context *,string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/logging.cpp" line="33" />
+</extent>
+<lines_of_code value="14" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>_log_info(Context *,string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/logging.cpp" line="14" />
+</extent>
+<lines_of_code value="14" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>blobFinder(...)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/filters.cpp" line="59" />
+</extent>
+<lines_of_code value="19" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>blobFinder(Mat,const int)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="include/filters.hpp" line="21" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="5" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>cclSmallFilter(Mat &amp;,const uint32_t)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/filters.cpp" line="31" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/filters.hpp" line="14" />
+</extent>
+<lines_of_code value="22" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="7" level="0" />
+<lines_of_code_per_line_of_comment value="3.143" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getConfigPath(Context *)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/config.cpp" line="64" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/config.hpp" line="39" />
+</extent>
+<lines_of_code value="14" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>imshow(Mat)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/cv2debugging.cpp" line="35" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/cv2debugging.hpp" line="9" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>imshowLabels(Mat,Mat,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/cv2debugging.cpp" line="11" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/cv2debugging.hpp" line="7" />
+</extent>
+<lines_of_code value="18" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>loadConfig(Context *)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/config.cpp" line="81" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/config.hpp" line="45" />
+</extent>
+<lines_of_code value="20" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="5" level="0" />
+<lines_of_code_per_line_of_comment value="4.000" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>log_dbg(Context *,string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/logging.cpp" line="52" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/logging.hpp" line="8" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>log_err(Context *,string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/logging.cpp" line="68" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/logging.hpp" line="14" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>log_info(Context *,string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/logging.cpp" line="60" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/logging.hpp" line="10" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>log_warn(Context *,string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/logging.cpp" line="64" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/logging.hpp" line="12" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>main(int,char **)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/sequoia.cpp" line="12" />
+</extent>
+<extent>
+<description>definition</description>
+<source_reference file="src/sequoia_trainer.cpp" line="15" />
+</extent>
+<lines_of_code value="56" level="1" />
+<McCabes_cyclomatic_complexity value="10" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>mat2ShapeS(Mat &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/logging.cpp" line="72" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/logging.hpp" line="16" />
+</extent>
+<lines_of_code value="8" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>memcpy(...)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="include/BlockingSyncBuffer.hpp" line="22" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>ocvMatToRayImage(Mat)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/ocv2ray.cpp" line="25" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/ocv2ray.hpp" line="7" />
+</extent>
+<lines_of_code value="16" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>ocvPixelFormatToRay(int,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/ocv2ray.cpp" line="3" />
+</extent>
+<lines_of_code value="20" level="0" />
+<McCabes_cyclomatic_complexity value="8" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>parse_config_kv(Configuration &amp;,string,string)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/config.cpp" line="22" />
+</extent>
+<lines_of_code value="33" level="1" />
+<McCabes_cyclomatic_complexity value="14" level="1" />
+<lines_of_comment value="5" level="0" />
+<lines_of_code_per_line_of_comment value="6.600" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="2.800" level="0" />
+</member_function>
+<member_function>
+<name>segfault_handler(int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/staticdbg.h" line="12" />
+</extent>
+<lines_of_code value="8" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>anonymous</name>
+<client_module>
+</client_module>
+<supplier_module>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

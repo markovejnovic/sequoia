@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Context-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="11" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="2" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="2" level="0" />
+<coupling_between_objects value="7" level="0" />
+<IF4 value="100" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="100" level="1" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="16" level="0" />
+<IF4_concrete_per_member_function value="********" level="2" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="include/context.hpp" line="11" />
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Context()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/context.cpp" line="5" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/context.hpp" line="13" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Context(Context *)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/context.cpp" line="7" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/context.hpp" line="14" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Context</name>
+<client_module>
+<name>AppThreadManager</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/AppThreadManager.cpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/AppThreadManager.cpp" line="30" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="29" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="34" />
+</extent>
+<name>Dbg</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/cv2debugging.cpp" line="44" />
+</extent>
+<name>ImageProcessor</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/ImageProcessor.cpp" line="13" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/ImageProcessor.hpp" line="24" />
+</extent>
+<extent>
+<description>has by reference</description>
+<source_reference file="include/ImageProcessor.hpp" line="50" />
+</extent>
+<name>UIContext</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/uicontext.cpp" line="5" />
+</extent>
+<extent>
+<description>inheritance</description>
+<source_reference file="include/uicontext.hpp" line="9" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/uicontext.hpp" line="12" />
+</extent>
+<name>WorkingContext</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/context.cpp" line="13" />
+</extent>
+<extent>
+<description>inheritance</description>
+<source_reference file="include/context.hpp" line="26" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/context.hpp" line="29" />
+</extent>
+</client_module>
+<supplier_module>
+<name>bool</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="include/context.hpp" line="16" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="include/context.hpp" line="17" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

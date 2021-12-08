@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module AppThreadManager-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="92" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="10" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="10" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="9.200" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.000" level="0" />
+<weighted_methods_per_class_unity value="14" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="8" level="0" />
+<IF4 value="49" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="49" level="1" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="20" />
+<lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<description>declaration</description>
+<source_reference file="include/context.hpp" line="20" />
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>AppThreadManager()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/AppThreadManager.cpp" line="9" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/AppThreadManager.hpp" line="22" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>finishAll()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/AppThreadManager.cpp" line="46" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/AppThreadManager.hpp" line="36" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>freeData(void *)</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="86" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getFps()</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="43" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getHeight()</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="63" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getOutputData(void)</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="82" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getSm()</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="70" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getWidth()</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="56" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setOutputData(Mat *)</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="77" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>spawnUiThread(Context *)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/AppThreadManager.cpp" line="17" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/AppThreadManager.hpp" line="29" />
+</extent>
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>spawnWorkerThread(Context *)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/AppThreadManager.cpp" line="30" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/AppThreadManager.hpp" line="34" />
+</extent>
+<lines_of_code value="12" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="5" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>updateFps(float)</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="38" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>updateMetrics(float,float,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="include/AppThreadManager.hpp" line="50" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>~AppThreadManager()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src/AppThreadManager.cpp" line="13" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include/AppThreadManager.hpp" line="23" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>AppThreadManager</name>
+<client_module>
+<name>ThreadContext</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="include/context.hpp" line="23" />
+</extent>
+</client_module>
+<supplier_module>
+<name>BlockingSyncBuffer</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="129" />
+</extent>
+<name>Context</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/AppThreadManager.cpp" line="17" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src/AppThreadManager.cpp" line="30" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="29" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="34" />
+</extent>
+<name>ImageReader</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="125" />
+</extent>
+<name>MainUI</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="124" />
+</extent>
+<name>Mat</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="77" />
+</extent>
+<name>thread</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="include/AppThreadManager.hpp" line="126" />
+</extent>
+<name>vector</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="include/AppThreadManager.hpp" line="127" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>
